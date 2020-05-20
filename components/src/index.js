@@ -9,10 +9,16 @@ const App = props => {
 
   return (
   <div className="ui container comments">
-    <ApprovalCard />
-    <CommentDetail author="Sam" timeAgo="4:30pm" text="Cool bro" avatar={faker.image.avatar()}/>
-    <CommentDetail author="Alex" timeAgo="5:40pm" text="Wow you're hot" avatar={faker.image.avatar()} />
-    <CommentDetail author="Max" timeAgo="2:30pm" text="You're digging it" avatar={faker.image.avatar()} />
+    <ApprovalCard>
+      <CommentDetail author="Sam" timeAgo="4:30pm" text="Cool bro" avatar={faker.image.avatar()}/>
+    </ApprovalCard>
+    <ApprovalCard>
+      <CommentDetail author="Alex" timeAgo="5:40pm" text="Wow you're hot" avatar={faker.image.avatar()} />
+    </ApprovalCard>
+    <ApprovalCard>
+      <CommentDetail author="Max" timeAgo="2:30pm" text="You're digging it" avatar={faker.image.avatar()} />
+    </ApprovalCard>
+    
   </div>
   );
 };
